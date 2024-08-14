@@ -11,19 +11,9 @@ public class GetAllMovieTest {
     public void setup() {
         RestAssured.baseURI = Config.getBaseUrl();
     }
-    public void getAllMovimnxje() {
-
-        RestAssured.given()
-                .when()
-                .get(Config.getEndpoint("movie"))
-                .then()
-                .statusCode(200)
-                .log().all();
-    }
 
     @Test
-    public void getAllMovieah() {
-
+    public void getAllMovie() {
         RestAssured.given()
                 .when()
                 .get(Config.getEndpoint("movie"))
@@ -31,5 +21,4 @@ public class GetAllMovieTest {
                 .statusCode(200)
                 .log().all();
     }
-
 }
