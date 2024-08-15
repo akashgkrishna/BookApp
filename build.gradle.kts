@@ -16,10 +16,15 @@ dependencies {
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
     testImplementation("io.rest-assured:rest-assured:5.5.0")
 
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    testImplementation("io.qameta.allure:allure-testng:2.20.0")
+
+
+
 }
 
 tasks.test {
     useTestNG {
-        suites("testng.xml")
+        suites("src/test/resources/testng.xml")
     }
 }
