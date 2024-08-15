@@ -12,6 +12,12 @@ import java.util.Properties;
 public class Config {
     private static final Properties properties = new Properties();
 
+/*
+    TODO  Add multiple config support
+    String env = System.getProperty("env", "prod");
+    InputStream input = new FileInputStream("config/movie/" + env + ".properties");
+*/
+
     static {
         try (InputStream input = new FileInputStream("config/movie/prod.properties")) {
             properties.load(input);
