@@ -19,8 +19,6 @@ dependencies {
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
     testImplementation("io.qameta.allure:allure-testng:2.20.0")
 
-
-
 }
 
 tasks.test {
