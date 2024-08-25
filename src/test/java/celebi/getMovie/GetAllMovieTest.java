@@ -49,7 +49,7 @@ public class GetAllMovieTest {
                 .get(Config.getEndpoint("movie"))
                 .then()
                 .statusCode(200)
-                .body("size()", equalTo(20)); // Assuming 28 is the expected count
+                .body("size()", equalTo(28)); // Assuming 28 is the expected count
     }
 
     @Test

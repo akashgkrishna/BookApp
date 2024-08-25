@@ -4,6 +4,8 @@
     <test name="Movie Tests">
         <classes>
             <class name="celebi.getMovie.GetAllMovieTest"/>
+            <class name="celebi.getSimilarMovie.GetSimilarMoviesTest"/>
+            <class name="celebi.getSimilarMovie.GetSimilarMovieNegativeTest"/>
         </classes>
     </test>
 </suite>
