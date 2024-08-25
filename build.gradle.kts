@@ -24,5 +24,8 @@ dependencies {
 tasks.test {
     useTestNG {
         suites("src/test/resources/testng.xml")
+
     }
+//    systemProperty("env", project.hasProperty("env") ? project . property ("env") : "prod")
+    systemProperty("env",project.findProperty("env") as String? ?: "prod")
 }
