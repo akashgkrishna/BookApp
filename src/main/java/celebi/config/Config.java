@@ -19,10 +19,11 @@ public class Config {
 */
 
     static {
-        try (InputStream input = new FileInputStream("config/movie/prod.properties")) {
+        String env = System.getProperty("env", "prod");
+        try (InputStream input = new FileInputStream("config/movie/" + env + ".properties")) {
             properties.load(input);
         } catch (Exception ex) {
-            System.out.println("Error loading properties file: " + ex.getMessage());
+            System.out.println("Error loading   properties file for environment '" + env + "': " + ex.getMessage());
         }
     }
 
