@@ -5,18 +5,12 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- The Config class loads configuration properties from a file and provides
- methods to access those properties.
-*/
+ * The Config class loads configuration properties from a file and provides
+ * methods to access those properties.
+ */
 
 public class Config {
     private static final Properties properties = new Properties();
-
-/*
-    TODO  Add multiple config support
-    String env = System.getProperty("env", "prod");
-    InputStream input = new FileInputStream("config/movie/" + env + ".properties");
-*/
 
     static {
         String env = System.getProperty("env", "prod");
